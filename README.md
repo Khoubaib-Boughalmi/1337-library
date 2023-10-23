@@ -2,6 +2,10 @@
 
 Welcome to library.1337.ma, a powerful library management application designed to streamline the operations of 1337 Tetouan's library, with the potential for deployment in other 1337 campuses. This application is the result of my dedicated work as a volunteer staff member at 1337Med.
 
+Note: Please keep in mind that this is not the production repository. Since it's an internal project, I'm unable to share the final source code or the original repository. However, it includes all the key components to provide a comprehensive understanding of the project code.
+
+- ![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/3.png)
+
 ## Overview
 
 - **Technical Stack**: library.1337.ma is built upon a modern technology stack, including TypeScript, Next.js, Express.js, EJS, and MongoDB. This stack ensures efficiency, scalability, and maintainability.
@@ -35,3 +39,7 @@ Welcome to library.1337.ma, a powerful library management application designed t
 ## Future Prospects
 
 - With its proven utility at 1337 Tetouan, library.1337.ma has the potential to benefit other 1337 campuses. The application is designed with scalability in mind, making it suitable for diverse academic environments.
+
+- ![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/1.png)
+- ![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/4.png)
+
