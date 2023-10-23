@@ -40,6 +40,7 @@ Note: Please keep in mind that this is not the production repository. Since it's
 
 - With its proven utility at 1337 Tetouan, library.1337.ma has the potential to benefit other 1337 campuses. The application is designed with scalability in mind, making it suitable for diverse academic environments.
 
-- ![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/1.png)
-- ![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/4.png)
+![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/1.png)
+![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/5.png)
+![Description 1](https://github.com/Khoubaib-Boughalmi/1337-library/blob/main/assets/4.png)
 
