@@ -1,0 +1,267 @@
+.book-card {
+    width: 14rem;
+    color: white;
+    margin-bottom: -1rem;
+    cursor: pointer;
+    transition: all 0.9s;
+    &:hover {
+        transform: scale(1.04);
+    }
+    z-index: 2;
+    .card-front {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        .rating {
+            z-index: 3;
+            display: grid;
+            position: absolute;
+            place-items: center;
+            margin-left: 12rem;
+            margin-top: -0.7rem;
+            width: 2rem;
+            height: 3rem;
+            color: #000000;
+            background-color: gold;
+            border-bottom-left-radius: 40%;
+            svg {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5px);
+    z-index: 5;
+}
+
+.book-modal {
+    width: 60rem;
+    height: 35rem;
+    position: fixed;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    transition: all 0.5s ease-in-out;
+
+    .left {
+        color: #fff;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+        background: linear-gradient(to bottom right, #000000c6, #000000);
+        display: flex;
+        justify-content: space-evenly;
+
+        h3 {
+            text-align: center;
+            z-index: 2;
+        }
+
+        .line {
+            width: 80%;
+            height: 0.15rem;
+            background-color: #ffffff;
+            border-radius: 2rem;
+            z-index: 2;
+        }
+
+        img {
+            width: 15rem;
+            height: 20rem;
+        }
+        .available {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.4rem;
+            background-color: rgb(56, 142, 60);
+            svg {
+                font-size: 1.5rem;
+            }
+        }
+
+        .booking-buttom {
+            @extend .available;
+            background-color: #00ff55c9;
+            box-shadow: 0px 1px 17px #00ff5591;
+            border: none;
+            padding: 0.5rem 1rem;
+            width: 12rem;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #299a4f;
+                scale: 1.05;
+            }
+        }
+    }
+
+    .right {
+        color: #000000;
+        display: flex;
+        height: inherit;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        background: linear-gradient(to right bottom, #ffffff35, #81818160);
+        .line {
+            width: 80%;
+            margin-left: 10%;
+            height: 0.15rem;
+            margin-top: 0.5rem;
+            background-color: #000000;
+            border-radius: 2rem;
+        }
+        .description {
+            padding: 0.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.7rem;
+            gap: 0.2rem;
+            border-radius: 0.7rem;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 16px hsla(0, 0%, 22%, 0.48);
+            max-height: 15rem;
+            h3 {
+                font-weight: bold;
+            }
+            p {
+                max-height: 15rem;
+                overflow-y: auto;
+                padding: 0.5rem;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgb(56, 142, 60);
+                    border-radius: 0.5rem;
+                    &:hover {
+                        background-color: #1bc8007f;
+                    }
+                }
+            }
+        }
+        .category {
+            .tags {
+                max-height: 5rem;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgb(56, 142, 60);
+                    border-radius: 0.5rem;
+                    &:hover {
+                        background-color: #1bc8007f;
+                    }
+                }
+                display: flex;
+                gap: 0.5rem;
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                p {
+                    background-color: #000000da;
+                    color: #fff;
+                    padding: 0.5rem 1rem;
+                    border: none;
+                    border-radius: 0.4rem;
+                    text-align: center;
+                    font-weight: bold;
+                    width: 12rem;
+                    // box-shadow: 0px 1px 7px #393939;
+                }
+            }
+        }
+        .pre-book {
+            @extend .description;
+            margin-top: 1rem;
+
+            .check-rules {
+                display: flex;
+                align-items: center;
+                border-radius: 0.9rem;
+                gap: 0.5rem;
+                span {
+                    font-weight: 900;
+                    color: #ff0000;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .rules {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.7rem;
+            gap: 0.2rem;
+            border-radius: 0.7rem;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 16px hsla(0, 0%, 22%, 0.48);
+            max-height: 10rem;
+            h3 {
+                font-weight: bold;
+            }
+            p {
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    width: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgb(56, 142, 60);
+                    &:hover {
+                        background-color: #1bc8007f;
+                    }
+                }
+            }
+            button {
+                background-color: #000000da;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 0.4rem;
+                text-align: center;
+                font-weight: bold;
+                width: 12rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: #00000080;
+                }
+            }
+        }
+    }
+}

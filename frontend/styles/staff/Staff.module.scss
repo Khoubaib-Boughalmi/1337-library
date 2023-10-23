@@ -1,0 +1,33 @@
+.staff-main {
+    margin: 1rem;
+    width: 95%;
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .line {
+        width: inherit;
+        height: 0.2rem;
+        background-color: #000000;
+        border-radius: 1rem;
+        margin-block: 1rem;
+        margin-left: 2rem;
+    }
+    .photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        img {
+            width: 40%;
+            object-fit: cover;
+            border-radius: 50%;
+            border-color: gold;
+            border-style: dashed;
+            border-width: 3rem;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.bookings-main {
+    margin: 1rem;
+    width: 95%;
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .line {
+        width: inherit;
+        height: 0.2rem;
+        background-color: #000000;
+        border-radius: 1rem;
+        margin-block: 1rem;
+        margin-left: 2rem;
+    }
+    .bookings-container {
+        margin: 2rem;
+        background-color: white;
+        width: inherit;
+        padding: 1rem;
+
+        border-radius: 1rem;
+        box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+    }
+    .list-header {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        border-bottom: 0.2rem solid #000000;
+    }
+    .list {
+        max-height: 70vh;
+        overflow-y: scroll;
+        .log-card {
+            border-bottom: 0.2rem solid #000000;
+            padding: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            .user-info {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-weight: 600;
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                }
+            }
+            .books-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.7rem;
+                button {
+                    border-radius: 0.5rem;
+                    padding: 0.4rem 2rem;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    background-color: #000000;
+                    &:hover {
+                        background-color: #333333;
+                    }
+                }
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+            }
+        }
+    }
+}
