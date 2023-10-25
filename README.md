@@ -1,4 +1,4 @@
-# library.1337.ma - A Simplified Library Management Solution
+# library.1337.ma - A Library Management Solution
 
 Welcome to library.1337.ma, a powerful library management application designed to streamline the operations of 1337 Tetouan's library, with the potential for deployment in other 1337 campuses. This application is the result of my dedicated work as a volunteer staff member at 1337Med.
 
